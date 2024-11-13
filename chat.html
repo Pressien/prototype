@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="chatroom.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Sidebar displaying members and chat info -->
+        <div class="sidebar">
+            <h2>Chatroom</h2>
+            <p>Members: 2</p>
+            <p>Other details here...</p>
+        </div>
+
+        <!-- Main chat area -->
+        <div class="chat-main">
+            <div class="chat-header">Chatroom</div>
+
+            <!-- Chat messages -->
+            <div class="message other-member">
+                <p>Why do you want to join?</p>
+            </div>
+            <div class="message my-message">
+                <p>I have pictures too</p>
+            </div>
+            <div class="message other-member">
+                <p>Okay then here's the link, enjoy</p>
+            </div>
+            <div class="message other-member">
+                <p>link to chatroom: <a href="chatroom.html" class="chat-link">Next Chatroom</a></p>
+            </div>
+			  </div>
+
+</div>
+
+            <!-- Click Here Button to play Audio -->
+            <button class="click-here-button" onclick="playAudio()">Click Here to screenshot</button>
+
+            <!-- Audio element -->
+            <audio id="audio-player" src="your-audio-file.mp3" preload="auto"></audio>
+        </div>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('audio-player');
+            audio.play();
+        }
+    </script>
+</body>
+</html>

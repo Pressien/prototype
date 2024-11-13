@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake - Immersive Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- Video Background -->
+<div class="video-wrapper">
+    <video class="video-background" autoplay loop muted>
+        <source src="ai.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<!-- Overlay for darkening effect -->
+<div class="overlay"></div>
+
+<!-- Main Content Container -->
+<div class="container">
+    <div class="title">Immersive Story Based Game Website</div>
+    <h1 class="main-title">Deepfake</h1>
+    <p class="description">
+        Deepfake is a machine learning technology that manipulates images, audio, and video. This story, based on the 'N' room case, explores its misuse, showing the impact on victims and society.
+        <br><br>
+        You play as a detective gathering evidence to save countless women, both minors and adults, from exploitation.
+    </p>
+    <div class="buttons">
+        <a href="about.html" class="button">About</a>
+        <a href="Talk to the Victim.html" class="button">Talk to the Victim</a>
+    </div>
+</div>
+
+</body>
+</html>

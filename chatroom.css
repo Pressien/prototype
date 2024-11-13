@@ -1,0 +1,162 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-page layout */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8;
+}
+
+/* Chat container that will hold the side panel and the chat area */
+.chat-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}
+
+/* Sidebar: Fixed panel with chat info and members list */
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    border-right: 2px solid #3498db;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Sidebar heading */
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Member count and links in sidebar */
+.sidebar p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Main chat area (takes the remaining width) */
+.chat-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+/* Chat header */
+.chat-header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styling for each chat message */
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* Message from other members */
+.other-member {
+    background-color: #e6e6e6;
+    align-self: flex-start;
+}
+
+/* Message from the current user */
+.my-message {
+    background-color: #d0f0d0;
+    align-self: flex-end;
+}
+
+/* Links in chat */
+.chat-link {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Image in chat messages */
+.chat-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* AI bot messages for final review */
+.ai-bot {
+    background-color: #e6f7ff;
+    border-left: 4px solid #3498db;
+    color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Disabled buttons */
+.disabled-button {
+    background-color: #dcdcdc;
+    border: none;
+    color: #888;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    font-weight: bold;
+}
+/* Click Here Button Styling */
+.click-here-button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.click-here-button:hover {
+    background-color: #2980b9;
+}
+}
+
+/* Click Here Button Styling */
+.click-here-button {
+    font-size: 14px;
+    color: #3498db;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.click-here-button:hover {
+    color: #2980b9;
+}

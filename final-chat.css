@@ -1,0 +1,43 @@
+
+.ai-bot {
+    background-color: #e6f7ff;
+    border-left: 4px solid #3498db;
+    color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.payment-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.disabled-button {
+    background-color: #dcdcdc;
+    border: none;
+    color: #888;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    font-weight: bold;
+}
+}
+
+
+.click-here-button {
+    font-size: 14px;
+    color: #3498db;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}

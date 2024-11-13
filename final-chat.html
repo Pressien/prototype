@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatroom.css">
+    <link rel="stylesheet" href="final-chat.css">
+    <title>Final Review</title>
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Sidebar showing the number of members -->
+        <div class="sidebar">
+            <h2>Chatroom</h2>
+            <p>Members: 6</p>
+        </div>
+
+        <!-- Main chat area -->
+        <div class="chat-main">
+            <div class="chat-header">Final Review Chat</div>
+            <div class="message ai-bot">
+                <p>Hello! This is the AI bot assisting you with creating your own deepfake. Below is the summary of your order:</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula, urna in bibendum cursus, 
+                    sapien augue viverra eros, non cursus metus risus sit amet ligula. Phasellus sit amet lacus non nisl sagittis 
+                    malesuada. Donec egestas elit vel neque lacinia tempor. Sed id orci est. Nullam et risus vel magna dignissim 
+                    placerat. Ut eget lacus dolor. Vivamus ut dui augue. Sed faucibus orci justo, ut pellentesque lorem elementum eget. 
+                    Etiam pulvinar vestibulum nibh, eu bibendum mauris.
+                </p>
+                <p>Please select your payment method below:</p>
+
+                <!-- Non-clickable payment buttons -->
+                <div class="payment-buttons">
+                    <button class="disabled-button" disabled>Credit Card</button>
+                    <button class="disabled-button" disabled>PayPal</button>
+                    <button class="disabled-button" disabled>Bank Transfer</button>
+                </div>
+            </div>
+        </div>
+
+            <!-- Click Here Button to play Audio -->
+<button class="click-here-button" onclick="playAudioAndRedirect()">Click Here to screenshot</button>
+
+<script>
+function playAudioAndRedirect() {
+    // Play audio
+    var audio = new Audio('your-audio-file.mp3'); // Replace with your audio file path
+    audio.play();
+
+    // Redirect to the next page after the audio starts
+    audio.onplaying = function() {
+        window.location.href = 'evidence.html'; // Navigate to the next page
+    };
+}
+</script>
+
+</body>
+</html>
